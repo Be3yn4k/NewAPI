@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Андрей\\OneDrive\\Колледж\\Практика\\Задания\\API & БД\\BackendApi\\DataAccess\\DataAccess.csproj": {}
+    "C:\\newAPI\\NewAPI\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Андрей\\OneDrive\\Колледж\\Практика\\Задания\\API & БД\\BackendApi\\DataAccess\\DataAccess.csproj": {
+    "C:\\newAPI\\NewAPI\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Андрей\\OneDrive\\Колледж\\Практика\\Задания\\API & БД\\BackendApi\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\newAPI\\NewAPI\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Андрей\\OneDrive\\Колледж\\Практика\\Задания\\API & БД\\BackendApi\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\newAPI\\NewAPI\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Андрей\\OneDrive\\Колледж\\Практика\\Задания\\API & БД\\BackendApi\\DataAccess\\obj\\",
+        "outputPath": "C:\\newAPI\\NewAPI\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Андрей\\AppData\\Roaming\\NuGet\\NuGet.Config",

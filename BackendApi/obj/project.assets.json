@@ -2475,11 +2475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Андрей\\OneDrive\\Колледж\\Практика\\Задания\\API & БД\\BackendApi\\BackendApi\\BackendApi.csproj",
+      "projectUniqueName": "C:\\newAPI\\NewAPI\\BackendApi\\BackendApi.csproj",
       "projectName": "BackendApi",
-      "projectPath": "C:\\Users\\Андрей\\OneDrive\\Колледж\\Практика\\Задания\\API & БД\\BackendApi\\BackendApi\\BackendApi.csproj",
+      "projectPath": "C:\\newAPI\\NewAPI\\BackendApi\\BackendApi.csproj",
       "packagesPath": "C:\\Users\\Андрей\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Андрей\\OneDrive\\Колледж\\Практика\\Задания\\API & БД\\BackendApi\\BackendApi\\obj\\",
+      "outputPath": "C:\\newAPI\\NewAPI\\BackendApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Андрей\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2496,8 +2496,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Андрей\\OneDrive\\Колледж\\Практика\\Задания\\API & БД\\BackendApi\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Андрей\\OneDrive\\Колледж\\Практика\\Задания\\API & БД\\BackendApi\\DataAccess\\DataAccess.csproj"
+            "C:\\newAPI\\NewAPI\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\newAPI\\NewAPI\\DataAccess\\DataAccess.csproj"
             }
           }
         }

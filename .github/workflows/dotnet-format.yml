@@ -34,7 +34,9 @@ jobs:
         dotnet-version: 3.1
 
     - name: Install global tools
-      run: dotnet tool restore
+      run: |
+        dotnet tool restore
+        dotnet tool install -g dotnet-format
 
     - name: Check code formatting
       run: dotnet format --check --verbosity diagnostic
