@@ -1,0 +1,586 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BackendApi</name>
+    </assembly>
+    <members>
+        <member name="M:BackendApi.Controllers.BookController.GetAll">
+            <summary>
+            Получение всех записей книг
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.BookController.GetById(System.Int32)">
+             <summary>
+             Получение записи книги по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 1
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.BookController.Add(BackendApi.Models.Book)">
+             <summary>
+             Создание новой записи книги
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     "genreId": 1,
+                     "bookStatusId": 0,
+                     "title": "Золотая рыбка",
+                     "author": "А.С. Пушкин",
+                     "publicationDate": "1835-00-00",
+                     "createdBy": 1,
+                     "createdAt": "2024-01-21T18:57:41.342Z"
+                 }
+            
+             </remarks>
+             <param name="model">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.BookController.Update(BackendApi.Contracts.Book.CreateBookRequest)">
+             <summary>
+             Изменение существующей записи книги
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     "genreId": 1,
+                     "bookStatusId": 0,
+                     "title": "Золотая рыбка",
+                     "author": "А.С. Пушкин",
+                     "publicationDate": "1835-00-00",
+                     "createdBy": 1,
+                     "createdAt": "2024-01-21T18:57:41.342Z"
+                 }
+            
+             </remarks>
+             <param name="model">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.BookController.Delete(System.Int32)">
+             <summary>
+             Удаление данных о книге по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 6
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.Book_statusController.GetAll">
+            <summary>
+            Получение всех статусов книг
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.Book_statusController.GetById(System.Int32)">
+             <summary>
+             Получение статуса книги по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 1
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.Book_statusController.Add(BackendApi.Contracts.Book_status.CreateBook_statusRequest)">
+             <summary>
+             Добавление статуса книги
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "statusName": "Читаю сейчас"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.Book_statusController.Update(BackendApi.Contracts.Book_status.CreateBook_statusRequest)">
+             <summary>
+             Обновление существующего статуса книги
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "roleName": "Owner"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.Book_statusController.Delete(System.Int32)">
+             <summary>
+             Удаление статуса книги по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 6
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentController.GetAll">
+            <summary>
+            Получение всех комментариев
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentController.GetById(System.Int32)">
+             <summary>
+             Получение комментария
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 1
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentController.Add(BackendApi.Contracts.Comment.CreateCommentRequest)">
+             <summary>
+             Создание нового комментария
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "bookId": 1,
+                     "userId": 1,
+                     "commentText": "Хорошая книга",
+                     "commentDate": "2024-01-21T18:57:41.342Z",
+                     "createdBy": 1,
+                     "createdAt": "2024-01-21T18:57:41.342Z"
+                 }
+            
+             </remarks>
+             <param name="model"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentController.Update(BackendApi.Contracts.Comment.CreateCommentRequest)">
+             <summary>
+             Обновление данных комментария
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "bookId": 1,
+                     "userId": 1,
+                     "commentText": "Хорошая книга",
+                     "commentDate": "2024-01-21T18:57:41.342Z",
+                     "createdBy": 1,
+                     "createdAt": "2024-01-21T18:57:41.342Z"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.CommentController.Delete(System.Int32)">
+             <summary>
+             Удаление комментария по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 6
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.GenreController.GetAll">
+            <summary>
+            Получение всех жанров
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.GenreController.GetById(System.Int32)">
+             <summary>
+             Получение жанра по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 1
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.GenreController.Add(BackendApi.Contracts.Genre.CreateGenreRequest)">
+             <summary>
+             Добавление жанра
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "genreName": "Horror"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.GenreController.Update(BackendApi.Contracts.Genre.CreateGenreRequest)">
+             <summary>
+             Обновление существующего жанра
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "genreName": "Horror"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.GenreController.Delete(System.Int32)">
+             <summary>
+             Удаление жанра по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 6
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.NoteController.GetAll">
+            <summary>
+            Получение всех заметок
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.NoteController.GetById(System.Int32)">
+             <summary>
+             Получение заметки по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 1
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.NoteController.Add(BackendApi.Contracts.Note.CreateNoteRequest)">
+             <summary>
+             Создание заметки
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "usersId": 1,
+                     "booksId": 1,
+                     "noteText": "...",
+                     "noteDate": "12345",
+                     "createdBy": 1,
+                     "createdAt": "2024-01-21T18:57:41.342Z"
+                 }
+            
+             </remarks>
+             <param name="model"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.NoteController.Update(BackendApi.Contracts.Note.CreateNoteRequest)">
+             <summary>
+             Обновление заметки
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "usersId": 1,
+                     "booksId": 1,
+                     "noteText": "...",
+                     "noteDate": "12345",
+                     "createdBy": 1,
+                     "createdAt": "2024-01-21T18:57:41.342Z"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.NoteController.Delete(System.Int32)">
+             <summary>
+             Удаление заметки по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 6
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.RatingController.GetAll">
+            <summary>
+            Получение всех рейтингов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.RatingController.GetById(System.Int32)">
+             <summary>
+             Получения рейтинга по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 1
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.RatingController.Add(BackendApi.Contracts.Rating.CreateRatingRequest)">
+             <summary>
+             Добавление нового рейтинга
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "bookId": 1,
+                     "usersId": 1,
+                     "number": 5,
+                     "createdBy": 1,
+                     "createdAt": "2024-01-21T18:57:41.342Z"
+                 }
+            
+             </remarks>
+             <param name="model"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.RatingController.Update(BackendApi.Contracts.Rating.CreateRatingRequest)">
+             <summary>
+             Обновление рейтинга
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "bookId": 1,
+                     "usersId": 1,
+                     "number": 5,
+                     "createdBy": 1,
+                     "createdAt": "2024-01-21T18:57:41.342Z"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.RatingController.Delete(System.Int32)">
+             <summary>
+             Удаление рейтинга по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 6
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.RoleController.GetAll">
+            <summary>
+            Получение всех ролей
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.RoleController.GetById(System.Int32)">
+             <summary>
+             Получение роли по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 1
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.RoleController.Add(BackendApi.Contracts.Role.CreateRoleRequest)">
+             <summary>
+             Добавление роли
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "roleName": "Owner"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.RoleController.Update(BackendApi.Contracts.Role.CreateRoleRequest)">
+             <summary>
+             Обновление существующей роли
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "roleName": "Owner"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.RoleController.Delete(System.Int32)">
+             <summary>
+             Удаление роли по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 6
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UsersController.GetAll">
+            <summary>
+            Получение всех записей пользователей 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UsersController.GetById(System.Int32)">
+             <summary>
+             Получение записи пользователя по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 1
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UsersController.Add(BackendApi.Contracts.Users.CreateUserRequest)">
+             <summary>
+             Создание нового пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     "roleId": 1,
+                     "username": "Bebrik",
+                     "email": "Bebrik@gmail.com",
+                     "password": "12345",
+                     "createdBy": 1,
+                     "createdAt": "2024-01-21T18:57:41.342Z"
+                 }
+            
+             </remarks>
+             <param name="model">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UsersController.Update(BackendApi.Contracts.Users.CreateUserRequest)">
+             <summary>
+             Обновление данных пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+             
+                 {
+                     "roleId": 1,
+                     "username": "Bebrik",
+                     "email": "Bebrik@gmail.com",
+                     "password": "12345",
+                     "createdBy": 1,
+                     "createdAt": "2024-01-21T18:57:41.342Z"
+                 }
+            
+             </remarks>
+             <param name="user"></param>
+             <returns></returns>
+        </member>
+        <member name="M:BackendApi.Controllers.UsersController.Delete(System.Int32)">
+             <summary>
+             Удаление данных пользователя по id
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 {
+                     Id": 6
+                 }
+            
+             </remarks>
+             <param name="id"></param>
+             <returns></returns>
+        </member>
+    </members>
+</doc>
