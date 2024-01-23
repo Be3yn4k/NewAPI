@@ -1,42 +1,29 @@
-name: Build and Format Check
+name: Build and Format
 
 on:
   push:
-    branches:
-      - '*'
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
+    - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up .NET Core
+    - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1
+        dotnet-version: '6.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore
 
     - name: Build
-      run: dotnet build -c Release
+      run: dotnet build --no-restore
 
-  format-check:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
-    - name: Set up .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1
-
-    - name: Install global tools
-      run: |
-        dotnet tool restore
-        dotnet tool install -g dotnet-format --version 3.3.0
-
-    - name: Check code formatting
+    - name: Check formatting
       run: dotnet format --check --verbosity diagnostic
